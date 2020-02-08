@@ -400,17 +400,16 @@
  * the fan will turn on when any selected extruder is above the threshold.
  */
 #define E0_AUTO_FAN_PIN -1
-#define E1_AUTO_FAN_PIN -1
-#define E2_AUTO_FAN_PIN -1
-#define E3_AUTO_FAN_PIN -1
-#define E4_AUTO_FAN_PIN -1
-#define E5_AUTO_FAN_PIN -1
-#define CHAMBER_AUTO_FAN_PIN -1
+//#define E1_AUTO_FAN_PIN -1
+//#define E2_AUTO_FAN_PIN -1
+//#define E3_AUTO_FAN_PIN -1
+//#define E4_AUTO_FAN_PIN -1
+//#define CHAMBER_AUTO_FAN_PIN -1
 
 #define EXTRUDER_AUTO_FAN_TEMPERATURE 50
 #define EXTRUDER_AUTO_FAN_SPEED 255   // 255 == full speed
-#define CHAMBER_AUTO_FAN_TEMPERATURE 30
-#define CHAMBER_AUTO_FAN_SPEED 255
+//#define CHAMBER_AUTO_FAN_TEMPERATURE 30
+//#define CHAMBER_AUTO_FAN_SPEED 255
 
 /**
  * Part-Cooling Fan Multiplexer
@@ -1864,35 +1863,35 @@
     #define E0_MICROSTEPS       16
   #endif
 
-  #if AXIS_DRIVER_TYPE_E1(TMC26X)
-    #define E1_MAX_CURRENT    1000
-    #define E1_SENSE_RESISTOR   .075
-    #define E1_MICROSTEPS       16
-  #endif
+ // #if AXIS_DRIVER_TYPE_E1(TMC26X)
+ //   #define E1_MAX_CURRENT    1000
+ //   #define E1_SENSE_RESISTOR   .075
+ //   #define E1_MICROSTEPS       16
+ // #endif
 
-  #if AXIS_DRIVER_TYPE_E2(TMC26X)
-    #define E2_MAX_CURRENT    1000
-    #define E2_SENSE_RESISTOR   .075
-    #define E2_MICROSTEPS       16
-  #endif
+ // #if AXIS_DRIVER_TYPE_E2(TMC26X)
+ //   #define E2_MAX_CURRENT    1000
+ //   #define E2_SENSE_RESISTOR   .075
+ //   #define E2_MICROSTEPS       16
+ // #endif
 
-  #if AXIS_DRIVER_TYPE_E3(TMC26X)
-    #define E3_MAX_CURRENT    1000
-    #define E3_SENSE_RESISTOR   .075
-    #define E3_MICROSTEPS       16
-  #endif
+ // #if AXIS_DRIVER_TYPE_E3(TMC26X)
+ //   #define E3_MAX_CURRENT    1000
+ //   #define E3_SENSE_RESISTOR   .075
+ //   #define E3_MICROSTEPS       16
+ // #endif
 
-  #if AXIS_DRIVER_TYPE_E4(TMC26X)
-    #define E4_MAX_CURRENT    1000
-    #define E4_SENSE_RESISTOR   .075
-    #define E4_MICROSTEPS       16
-  #endif
+ // #if AXIS_DRIVER_TYPE_E4(TMC26X)
+ //   #define E4_MAX_CURRENT    1000
+ //   #define E4_SENSE_RESISTOR   .075
+ //   #define E4_MICROSTEPS       16
+ // #endif
 
-  #if AXIS_DRIVER_TYPE_E5(TMC26X)
-    #define E5_MAX_CURRENT    1000
-    #define E5_SENSE_RESISTOR   .075
-    #define E5_MICROSTEPS       16
-  #endif
+ // #if AXIS_DRIVER_TYPE_E5(TMC26X)
+ //   #define E5_MAX_CURRENT    1000
+//    #define E5_SENSE_RESISTOR   .075
+//    #define E5_MICROSTEPS       16
+ // #endif
 
 #endif // TMC26X
 
@@ -1982,40 +1981,40 @@
     #define E0_CHAIN_POS     -1
   #endif
 
-  #if AXIS_IS_TMC(E1)
-    #define E1_CURRENT      800
-    #define E1_MICROSTEPS    16
-    #define E1_RSENSE         0.11
-    #define E1_CHAIN_POS     -1
-  #endif
+ // #if AXIS_IS_TMC(E1)
+ //   #define E1_CURRENT      800
+ //   #define E1_MICROSTEPS    16
+ //   #define E1_RSENSE         0.11
+ //   #define E1_CHAIN_POS     -1
+ // #endif
 
-  #if AXIS_IS_TMC(E2)
-    #define E2_CURRENT      800
-    #define E2_MICROSTEPS    16
-    #define E2_RSENSE         0.11
-    #define E2_CHAIN_POS     -1
-  #endif
+ // #if AXIS_IS_TMC(E2)
+ //   #define E2_CURRENT      800
+ //   #define E2_MICROSTEPS    16
+ //   #define E2_RSENSE         0.11
+ //   #define E2_CHAIN_POS     -1
+ // #endif
 
-  #if AXIS_IS_TMC(E3)
-    #define E3_CURRENT      800
-    #define E3_MICROSTEPS    16
-    #define E3_RSENSE         0.11
-    #define E3_CHAIN_POS     -1
-  #endif
+ // #if AXIS_IS_TMC(E3)
+ //   #define E3_CURRENT      800
+ //   #define E3_MICROSTEPS    16
+ //   #define E3_RSENSE         0.11
+ //   #define E3_CHAIN_POS     -1
+ // #endif
 
-  #if AXIS_IS_TMC(E4)
-    #define E4_CURRENT      800
-    #define E4_MICROSTEPS    16
-    #define E4_RSENSE         0.11
-    #define E4_CHAIN_POS     -1
-  #endif
+ // #if AXIS_IS_TMC(E4)
+ //   #define E4_CURRENT      800
+  //  #define E4_MICROSTEPS    16
+ //   #define E4_RSENSE         0.11
+//    #define E4_CHAIN_POS     -1
+ // #endif
 
-  #if AXIS_IS_TMC(E5)
-    #define E5_CURRENT      800
-    #define E5_MICROSTEPS    16
-    #define E5_RSENSE         0.11
-    #define E5_CHAIN_POS     -1
-  #endif
+//  #if AXIS_IS_TMC(E5)
+//    #define E5_CURRENT      800
+//    #define E5_MICROSTEPS    16
+//    #define E5_RSENSE         0.11
+//    #define E5_CHAIN_POS     -1
+//  #endif
 
   /**
    * Override default SPI pins for TMC2130, TMC2160, TMC2660, TMC5130 and TMC5160 drivers here.
@@ -2140,11 +2139,11 @@
   #define Z2_HYBRID_THRESHOLD      3
   #define Z3_HYBRID_THRESHOLD      3
   #define E0_HYBRID_THRESHOLD     30
-  #define E1_HYBRID_THRESHOLD     30
-  #define E2_HYBRID_THRESHOLD     30
-  #define E3_HYBRID_THRESHOLD     30
-  #define E4_HYBRID_THRESHOLD     30
-  #define E5_HYBRID_THRESHOLD     30
+  //#define E1_HYBRID_THRESHOLD     30
+  //#define E2_HYBRID_THRESHOLD     30
+ // #define E3_HYBRID_THRESHOLD     30
+ //#define E4_HYBRID_THRESHOLD     30
+ // #define E5_HYBRID_THRESHOLD     30
 
   /**
    * Use StallGuard2 to home / probe X, Y, Z.
